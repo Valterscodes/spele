@@ -26,6 +26,31 @@ img { max-width: 100%; height: auto; }
     <li>Ja pārsniedz 21, zaudē.</li>
   </ul>
 </main>
+<style>
+body { font-family: Arial, sans-serif; max-width: 680px; margin: 24px auto; padding: 16px; line-height: 1.6; }
+button, input { font: inherit; padding: 10px; margin: 4px; }
+button { cursor: pointer; }
+img { max-width: 100%; height: auto; }
+[hidden] { display: none !important; }
+
+</style>
+</head>
+<body>
+<h1>Divi spēles pogas varianti</h1>
+<section>
+  <h2>A variants</h2>
+  <button onclick="document.getElementById('atbilde').textContent='Spēle sākta!'">Spied šeit</button>
+</section>
+<section>
+  <h2>B variants</h2>
+  <button onclick="document.getElementById('atbilde').textContent='Spēle sākta!'">Sākt spēli</button>
+</section>
+<p id="atbilde">Izmēģini abas pogas.</p>
+<h2>Black jack</h2>
+<button onclick="document.getElementById('atbilde').textContent='Saņem kārtis!'">Dīlo kārtis</button>
+</section>
+<p>Manai spēlei būs poga:</p>
+</body>
 <footer>
   <p>Spēle datorikas stundai.</p>
 </footer>
