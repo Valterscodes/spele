@@ -12,11 +12,24 @@ button { cursor: pointer; }
 img { max-width: 100%; height: auto; }
 [hidden] { display: none !important; }
 body { background-color: #880707; color: #f1f5f9; }
-h1 { color: #644bf3fb; }
+h1 { color: #1d1818fb; }
 ul { background-color: #c28c28; padding: 12px; border-radius: 12px; }
 button { background-color: #245b91; color: #ffffff; border: 0; }
+button, input { font: inherit; padding: 10px; margin: 4px; }
+button { cursor: pointer; }
+img { max-width: 100%; height: auto; }
+[hidden] { display: none !important; }
+.laukums { max-width: 100%;
+  width: 360px;
+  height: 240px;
+  padding: 20px;
+  border: 3px solid #070606;
+  background-color: #c7201a;
+  box-sizing: border-box;
+}
 </style>
 </head>
+
 <h1>Blackjack</h1>
 <h2>Kam spēle domāta?</h2>
 <p>Spēle ir domāta cilvēkiem kuriem patīk Blackjacks.</p>
@@ -37,6 +50,14 @@ button { background-color: #245b91; color: #ffffff; border: 0; }
 </section>
 <section id="laukums" hidden>
   <h2>Spēles ekrāns</h2>
+  <body>
+<h1>Spēles laukums</h1>
+<div class="laukums">
+  <p>Šeit būs spēle.</p>
+</div>
+<button>Sākt</button>
+<button>Noteikumi</button>
+</body>
   <p>Punkti: 0</p>
   <p>Džeks.</p>
   <button onclick="paraditSakumu()">Atpakaļ</button>
