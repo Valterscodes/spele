@@ -37,8 +37,7 @@ img { max-width: 100%; height: auto; }
 <p>Sakauj dīleri.</p>
 <body>
 <h2>Black jack</h2>
-<section id="sakums">
-  <div class="Noteikumi">
+  <section id="Noteikumi" class="Noteikumi">
   <h2>Noteikumi</h2>
   <h2>Var sadalīt divas vienādas kārtis.</h2>
   <ul>
@@ -46,8 +45,8 @@ img { max-width: 100%; height: auto; }
   <li>Apspēlē dīleri.</li>
   <li>Ja pārsniedz 21, zaudē.</li>
   </ul>
-  </div>
-  
+  </section>
+  <section id="sakums">
   <h2>Sākuma ekrāns</h2>
   <button onclick="paraditSpeli()">Sākt spēli</button>
 </section>
@@ -66,6 +65,10 @@ img { max-width: 100%; height: auto; }
 <img src="džeks.png" alt="Azartspēlmanis džeks" width="128">
 <p>Džeks saņem kārtis un meiģina apspēlēt dīleri.</p>
 </body>
+<h1>Spēles skaņa</h1>
+<p>Nospied atskaņošanas pogu.</p>
+<audio controls src="oxidvideos-shuffling-deck-of-cards-522518.mp3"></audio>
+<p>Šo skaņu dzirdēsi, kad izdalīs kārtis.</p>
   <p>Punkti: 0</p>
   <p>Džeks.</p>
   <button onclick="paraditSakumu()">Atpakaļ</button>
@@ -82,7 +85,7 @@ function paraditSakumu() {
   document.getElementById("laukums").hidden = true;
 }
 function paraditNoteikumi() {
-  document.getElementById("noteikumi").hidden = false;
+  document.getElementById("Noteikumi").hidden = false;
   document.getElementById("laukums").hidden = true;
 }
 
