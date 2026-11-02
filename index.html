@@ -64,6 +64,8 @@ img { max-width: 100%; height: auto; }
 <p>Attēlu pievienosi šajā nodarbībā.</p>
 <img src="Atteli/džeks.png" alt="Azartspēlmanis džeks" width="128">
 <p>Džeks saņem kārtis un meiģina apspēlēt dīleri.</p>
+<p id="punkti">Pārbaudes klikšķi: 0</p>
+  <button onclick="pieskaitit()">Dīllot</button>
 </body>
 <h1>Spēles skaņa</h1>
 <p>Nospied atskaņošanas pogu.</p>
@@ -88,7 +90,11 @@ function paraditNoteikumi() {
   document.getElementById("Noteikumi").hidden = false;
   document.getElementById("laukums").hidden = true;
 }
-
+let punkti = 0;
+function pieskaitit() {
+  punkti = punkti + 1;
+  document.getElementById("punkti").textContent = "Pārbaudes klikšķi: " + punkti;
+}
 </script>
   <p>Spēle datorikas stundai.</p>
 </footer>
