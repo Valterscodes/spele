@@ -27,7 +27,7 @@ img { max-width: 100%; height: auto; }
   background-color: #880a06;
   box-sizing: border-box;
 }
-.audio {background-color: #0f0c92;
+.skanas {background-color: #0f0c92;
   color: #f1f5f9;
   padding: 10px;
   border-radius: 12px;
@@ -79,10 +79,14 @@ img { max-width: 100%; height: auto; }
 <audio controls src="Skanas/modestas123123-cash-register-kaching-sound-effect-125042.mp3">
   <p>Šo skaņu dzirdēsi, kad uzvarēsi.</p>
 </audio>
-  <p>Punkti: 0</p>
+ <h1 id="nosaukums">Blackjack</h1>
+<p id="apraksts">Sakauj dīleri.</p>
+<div class="panelis">
+  <p id="">Nopelnīts: 0</p>
+  <p id="dzivibas">Dzīvības: 0</p>
   <p>Džeks.</p>
   <button onclick="paraditSakumu()">Atpakaļ</button>
-
+</div>
 </section>
 <script>
 // Gatavā palīdzība pogām. Šodien maini lapas tekstu un izvietojumu.
@@ -101,8 +105,17 @@ function paraditNoteikumi() {
 let punkti = 0;
 function pieskaitit() {
   punkti = punkti + 1;
-  document.getElementById("punkti").textContent = "Pārbaudes klikšķi: " + punkti;
+  document.getElementById("punkti").textContent = "Nauda: " + punkti;
 }
+const nosaukums = "Blackjack";
+const apraksts = "Apspēlē dīleri un nopelni naudu.";
+let Nopelnīts = 0;
+let nauda = 250;
+
+document.getElementById("nosaukums").textContent = nosaukums;
+document.getElementById("apraksts").textContent = apraksts;
+document.getElementById("punkti").textContent = "Nopelnīts: " + Nopelnīts;
+document.getElementById("dzivibas").textContent = "nauda: " + nauda;
 </script>
   <p>Spēle datorikas stundai.</p>
 </footer>
