@@ -82,8 +82,8 @@ img { max-width: 100%; height: auto; }
  <h1 id="nosaukums">Blackjack</h1>
 <p id="apraksts">Sakauj dīleri.</p>
 <div class="panelis">
-  <p id="">Nopelnīts: 0</p>
-  <p id="dzivibas">Dzīvības: 0</p>
+  <p id="Nopelnīts">Nopelnīts: 0</p>
+  <p id="Nauda">Nauda: 0</p>
   <p>Džeks.</p>
   <button onclick="paraditSakumu()">Atpakaļ</button>
 </div>
@@ -109,13 +109,18 @@ function pieskaitit() {
 }
 const nosaukums = "Blackjack";
 const apraksts = "Apspēlē dīleri un nopelni naudu.";
-let Nopelnīts = 0;
-let nauda = 250;
+const mērkaNopelnīts = "Nopelnīts: 1000";
+let Nopelnīts = 500;
+let Nauda = 250;
+
+Nopelnīts = Nopelnīts - 250;
+Nauda = Nauda + 250;
+let mērķim = 1000;
 
 document.getElementById("nosaukums").textContent = nosaukums;
 document.getElementById("apraksts").textContent = apraksts;
-document.getElementById("punkti").textContent = "Nopelnīts: " + Nopelnīts;
-document.getElementById("dzivibas").textContent = "nauda: " + nauda;
+document.getElementById("Nopelnīts").textContent = "Nopelnīts: " + Nopelnīts;
+document.getElementById("Nauda").textContent = "Nauda: " + Nauda;
 </script>
   <p>Spēle datorikas stundai.</p>
 </footer>
